@@ -5,10 +5,9 @@ $(document).ready(function(){
         TweenLite.set(tb[2],{transform : 'translate3d(100%,0,0)'});
         TweenLite.delayedCall(7,change);  
        */
-      $(window).load( "Index.html", function() { 
+      window.addEventListener("load",function(){
         $('.contain-loader').css({'display':'none'});
       });
-        
 
       var AP = [
         {
