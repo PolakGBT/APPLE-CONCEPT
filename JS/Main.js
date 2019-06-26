@@ -5,7 +5,7 @@ $(document).ready(function(){
         TweenLite.set(tb[2],{transform : 'translate3d(100%,0,0)'});
         TweenLite.delayedCall(7,change);  
        */
-      $(window).load( "test.html", function() { 
+      $(window).load( "Index.html", function() { 
         $('.contain-loader').css({'display':'none'});
       });
         
