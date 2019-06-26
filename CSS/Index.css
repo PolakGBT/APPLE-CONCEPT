@@ -23,7 +23,7 @@ body{
     position: absolute;
     top:15%;
     left:15%;
-    z-index: 2;
+    z-index: 15;
     height: 30%;
 }
 .concept h1{
@@ -233,7 +233,7 @@ body{
 }
 
 .contain-loader{
-    height:300px;
+    height:100px;
     width: 300px;
     position: absolute;
     z-index:10;
@@ -247,7 +247,7 @@ body{
     height: 100px;
     width: 100px;
 }
-.loader img{
+#load-start{
     height:100%;
     width: auto;
     animation: loader 1s linear infinite;
@@ -259,4 +259,29 @@ body{
     100%{
         transform: rotate(360deg);
     }
+}
+
+.anim-load{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    z-index:7;
+    display: flex;
+}
+.anim-load img{
+    height: 0%;
+    width: auto;
+    margin: auto;
+    opacity: 0;
+}
+#load-fin{
+    position: absolute;
+    top:50%;
+    left:50%;
+    height: 40px;
+    width:40px;
+    transform: translate3d(-50%,-50%,0);
+    z-index: 12;
+    opacity: 0;
 }
