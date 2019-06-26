@@ -1,0 +1,233 @@
+body{
+    margin:0px;
+}
+@font-face {
+    font-family: "SF-Pro-Text";
+    src: url("../OTHER/SF-Pro-Display-Ultralight.otf");
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+#basic{
+    height: 700px;
+    width: auto;
+}
+.concept{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:15%;
+    left:15%;
+    z-index: 2;
+    height: 30%;
+}
+.concept h1{
+    height: 30%;
+    font-size: 60px;
+    font-family: SF-Pro-Text;
+    color: #FFFFFF;
+    margin: 0;
+}
+.concept h2{
+    height: 30%;
+    font-size: 40px;
+    font-family: SF-Pro-Text;
+    color: #FFFFFF;
+    margin: 0;
+}
+.content{
+    display: block;
+    margin: auto;
+    position: relative;
+    z-index: 5;
+}
+.back{
+    position: absolute;
+    width: 100%;;
+}
+#mask2{
+    right: 0;
+    height: 120%;
+    position: absolute;
+}
+.AP1{
+    position: absolute;
+    width: 225px;
+    height: 250px;
+    right: 25px;
+    top: 25px;
+    background-color: #1C1C1E;
+    border-radius: 21px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+.AP2{
+    position: absolute;
+    width: 225px;
+    height: 250px;
+    right: 25px;
+    top: 300px;
+    background-color: #1C1C1E;
+    border-radius: 21px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.AP-Title{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    position: relative;
+}
+.AP-Title h1{
+    margin: auto;
+    font-family: SF-Pro-Text;
+    font-size: 25px;
+    color: rgba(235, 235, 245, 0.6);
+    line-height: 21px;
+}
+.AP-IMG{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    position: relative;
+}
+.AP-IMG video{
+    height: 90%;
+    width: auto;
+    margin: auto;
+    z-index: 1;
+}
+.AP-IMG img{
+    height: 90%;
+    width: auto;
+    margin: auto;
+    z-index: 1;
+}
+.anim{
+    display: none;
+}
+.AP-BUTTON{
+    width: 100%;
+    height: 25%;
+    display: flex;
+}
+.AP-BUTTON div{
+    margin: auto;
+    background-color: black;
+    height: 30px;
+    width: 175px;
+    display: flex;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.AP-BUTTON h2{
+    margin: auto;
+    font-family: SF-Pro-Text;
+    color: #FFFFFF;
+    font-size: 15px;
+}
+.screen{
+    position: absolute;
+    height: 638px;
+    width: 294px;
+    bottom: 41.5px;
+    left:23.5px;
+    border-radius: 29px;
+    overflow: hidden;
+}
+
+#blur{
+    position: absolute;
+    z-index:1;
+    top:0;
+    height: 0;
+    width: auto;
+}
+.connec{
+    position: absolute;
+    z-index: 2;
+    width: 287.5px;
+    height: 252px;
+    background: #1C1C1E;
+    border-radius: 29px;
+    bottom: 6px;
+    left:3px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transform: translateY(105%);
+}
+.APC-Title{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.APC-Title h1{
+    margin: auto;
+    font-family: SF-Pro-Text;
+    font-size: 18px;
+    color: rgba(235, 235, 245, 0.6);
+    line-height: 21px;
+}
+.APC-Img{
+    display: flex;
+    height: 45%;
+    margin: auto;
+    width: 80%;
+    position: relative;
+
+}
+.APC-IMG video{
+    height: 80%;
+    width: auto;
+    margin: auto;
+} 
+
+.APC-Power{
+    height: 25%;
+    width: 80%;
+    margin:auto;
+    display: flex;
+    position: relative;
+}
+.Power-details{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    height: 70%;
+    margin: auto;
+}
+.bar{
+    position: relative;
+    margin:auto;
+    width:25px;
+    height: 5px;
+}
+.bar div{
+    position: absolute;
+    display: block;
+    width:100%;
+    height: 100%;;
+    background-color:#515C70;
+    border-radius: 15px;
+    top:0;
+}
+.APC-Power h3{
+    margin-top:5px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #8E8E93;
+    font-size: 10px;
+    font-family: SF-Pro-Text;
+}
