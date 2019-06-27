@@ -5,6 +5,20 @@ $(document).ready(function(){
         TweenLite.set(tb[2],{transform : 'translate3d(100%,0,0)'});
         TweenLite.delayedCall(7,change);  
        */
+    window.addEventListener("load",function(){
+        var Al = new TimelineLite();
+        Al.to($('#img-load'),3,{'height': '30%'},"same");
+        Al.to($('#img-load'),3,{'opacity': '1'},"same");
+        Al.to($('.loader'),2,{'height': '40px','width':'40px'},"same");
+        Al.to($('#load-start'),0.5,{'opacity': '0'},"same1");
+        Al.to($('#load-fin'),0.5,{'opacity': '1'},'same1');
+        Al.to($('.loader'),2,{'opacity': '0'},"same2");
+        Al.to($('.anim-load'),2,{'opacity': '0'},"same2");
+        Al.to($('.contain-loader'),0,{'display': 'none'},"same3");
+        Al.to($('.anim-load'),0,{'display': 'none'},"same3");
+    });
+
+
       var AP = [
         {
             Button: $('#button-white'),
