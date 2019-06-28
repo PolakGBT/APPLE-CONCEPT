@@ -52,7 +52,7 @@ body{
     height: 100%;
 }
 #one{
-    opacity: 0.5;
+    opacity: 1;
     height: 120%;
     width: auto;
     position: absolute;
@@ -62,7 +62,7 @@ body{
     display: inline;
 }
 #two{
-    opacity: 0.5;
+    opacity: 0.8;
     height: 80%;
     width: auto;
     position: absolute;
