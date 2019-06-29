@@ -23,7 +23,7 @@ body{
     position: absolute;
     top:15%;
     left:15%;
-    z-index: 2;
+    z-index: 15;
     height: 30%;
 }
 .concept h1{
@@ -48,7 +48,26 @@ body{
 }
 .back{
     position: absolute;
-    width: 100%;;
+    width: 100%;
+    height: 100%;
+}
+#one{
+    opacity: 1;
+    height: 120%;
+    width: auto;
+    position: absolute;
+    top:-100px;
+    left:-300px;
+    border:0;
+    display: inline;
+}
+#two{
+    opacity: 0.8;
+    height: 80%;
+    width: auto;
+    position: absolute;
+    top:150px;
+    left:-300px;
 }
 #mask2{
     right: 0;
@@ -193,7 +212,11 @@ body{
     width: auto;
     margin: auto;
 } 
-
+.APC-IMG img{
+    height: 80%;
+    width: auto;
+    margin: auto;
+} 
 .APC-Power{
     height: 25%;
     width: 80%;
@@ -230,4 +253,58 @@ body{
     color: #8E8E93;
     font-size: 10px;
     font-family: SF-Pro-Text;
+}
+
+.contain-loader{
+    height:100px;
+    width: 300px;
+    position: absolute;
+    z-index:10;
+    top:50%;
+    left:50%;
+    display: flex;
+    transform: translate3d(-50%,-50%,0);
+}
+.loader{
+    margin:auto;
+    height: 100px;
+    width: 100px;
+}
+#load-start{
+    height:100%;
+    width: auto;
+    animation: loader 1s linear infinite;
+}
+@keyframes loader{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.anim-load{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    z-index:7;
+    display: flex;
+}
+.anim-load img{
+    height: 0%;
+    width: auto;
+    margin: auto;
+    opacity: 0;
+}
+#load-fin{
+    position: absolute;
+    top:50%;
+    left:50%;
+    height: 40px;
+    width:40px;
+    transform: translate3d(-50%,-50%,0);
+    z-index: 12;
+    opacity: 0;
 }

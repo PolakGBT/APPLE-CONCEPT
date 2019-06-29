@@ -5,6 +5,20 @@ $(document).ready(function(){
         TweenLite.set(tb[2],{transform : 'translate3d(100%,0,0)'});
         TweenLite.delayedCall(7,change);  
        */
+    window.addEventListener("load",function(){
+        var Al = new TimelineLite();
+        Al.to($('#img-load'),3,{'height': '30%'},"same");
+        Al.to($('#img-load'),3,{'opacity': '1'},"same");
+        Al.to($('.loader'),2,{'height': '40px','width':'40px'},"same");
+        Al.to($('#load-start'),0.5,{'opacity': '0'},"same1");
+        Al.to($('#load-fin'),0.5,{'opacity': '1'},'same1');
+        Al.to($('.loader'),2,{'opacity': '0'},"same2");
+        Al.to($('.anim-load'),2,{'opacity': '0'},"same2");
+        Al.to($('.contain-loader'),0,{'display': 'none'},"same3");
+        Al.to($('.anim-load'),0,{'display': 'none'},"same3");
+    });
+
+
       var AP = [
         {
             Button: $('#button-white'),
@@ -61,7 +75,7 @@ function one(data){
             data.Position = 1;
             TweenLite.to($('#blur'),0,{height: '700px'});
             TweenLite.to(data.Viewer,0.3,{'transform': 'translateY(0%)'});
-        },1500);
+        },500);
         
     }
     else{
@@ -72,7 +86,7 @@ function one(data){
             data.Position = 0;
             TweenLite.to($('#blur'),0,{height: '0px'});
             TweenLite.to(data.Viewer,0.3,{'transform': 'translateY(105%)'});
-        },1500);
+        },500);
         
     }
 }
@@ -104,7 +118,7 @@ function doublee(data,Sdata){
             power.children().children().css({'margin':'0'});
             power.children().children().first().css({'margin-top':'5px','margin-left':'5px'});
 
-        },1500);
+        },500);
     }
     if(data.Active && data.Position != 2){
         one(data);
@@ -129,7 +143,7 @@ function doublee(data,Sdata){
             power.children().children().removeAttr('style');
             //power.children().children().first().removeAttr('style');
 
-        },1500);
+        },500);
     }
     if(data.Active && data.Position == 2){
         data.Position = 0;
@@ -164,7 +178,7 @@ function doublee(data,Sdata){
             power2.children().last().removeAttr('style');
 
             power2.children().children().removeAttr('style');
-        },1500);
+        },500);
 
     }
 
