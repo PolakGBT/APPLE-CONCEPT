@@ -17,8 +17,10 @@ $(document).ready(function(){
             Al.call(function(){
                 vidload.play();
             });
-            Al.to($('.loadding'),1,{'opacity': '0',delay:8.09},"same2");
-            Al.to($('.loadding'),0,{'display': 'none'},"same3");
+            Al.to($('.loadding'),0,{'opacity': '1',delay:8.09});
+            Al.to($('#load-fin'),1,{'opacity': '0'},"same2");
+            Al.to($('.anim-load'),3,{'opacity': '0'},"same2");
+            Al.to($('.loadding'),0,{'display': 'none'});
         }
 
       var AP = [
