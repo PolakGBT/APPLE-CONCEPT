@@ -83,9 +83,4 @@ $(document).ready(function(){
   function view(e){
     TweenLite.to(e.target,3,{scale: 1});
   }
-
-
-
-
-
 });
