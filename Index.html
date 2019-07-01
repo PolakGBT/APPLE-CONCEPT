@@ -7,6 +7,12 @@
 
     <body>
         <div class="container">
+            <div class="loadding">
+                <canvas height="500" width="1000" id="canvas"></canvas>
+                <div class="anim-load">
+                    <video src="IMAGE/Loader/Open-style.mp4" id="vid-load" muted preload></video>
+                </div>
+            </div>
             <div class="content">
                 <img src="IMAGE/Apple iPhone XR Black.png" alt="" id="basic">
                 <img src="IMAGE/Apple iPhone XR Blur.png" alt="" id="blur">
@@ -41,8 +47,8 @@
                             <h1 id="BAPC">Black AirPods</h1>
                         </div>
                         <div class="APC-Img">
-                            <video autoplay muted src="IMAGE/White/AP.mp4"  loop preload></video>
-                            <video src="IMAGE/White/box.mp4" autoplay loop muted preload></video>
+                            <video autoplay muted src="IMAGE/Black/AP.mp4"  loop preload></video>
+                            <video src="IMAGE/Black/TB.mp4" autoplay loop muted preload></video>
                         </div>
                         <div class="APC-Power">
                             <div class="Power-details">
@@ -68,7 +74,7 @@
                     <h1 id="BAP">Black AirPods</h1>
                 </div>
                 <div class="AP-IMG">
-                    <video src="IMAGE/White/Open-WHite.mp4" id="anim-black" preload></video>
+                    <video src="IMAGE/Black/Open.mp4" id="anim-black" preload></video>
                 </div>
                 <div class="AP-BUTTON">
                     <div id="button-black" class="open">
@@ -95,7 +101,8 @@
                 <h1>Concept</h1>
             </div>
             <div class="back">
-                <img src="IMAGE/BACK/Mask Group.png" alt="">
+                <img src="IMAGE/BACK/1.svg" alt="" id="one">
+                <img src="IMAGE/BACK/2.svg" alt="" id="two">
                 <img src="IMAGE/BACK/mask2.png" alt="" id="mask2">
             </div>
         </div>
@@ -103,7 +110,9 @@
     <script src="JS\JQuery.js"></script>
     <script src="JS\Main.js"></script>
     <script src="JS\Anim.js"></script>
-    <script src="JS\freezeframe.min.js"></script>
+    <script src="JS\SlideBack.js"></script>
+    <script src="JS\Particle.js"></script>
+
     </body>
 </html>
 
