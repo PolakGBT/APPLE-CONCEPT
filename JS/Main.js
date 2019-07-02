@@ -11,6 +11,7 @@ $(document).ready(function(){
           });
             Al.to($('.load-start'),0.5,{'top': '50%'});
             Al.to($('.loadding'),2,{'opacity': '0',delay:5.5});
+            Al.to($('.loadding'),0,{'display': 'none'});
 
 
         }
@@ -179,4 +180,5 @@ function doublee(data,Sdata){
     }
 
 }
+
 });
