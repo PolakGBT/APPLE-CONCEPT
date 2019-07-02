@@ -23,7 +23,7 @@ body{
     position: absolute;
     top:15%;
     left:15%;
-    z-index: 2;
+    z-index: 5;
     height: 30%;
 }
 .concept h1{
@@ -48,7 +48,26 @@ body{
 }
 .back{
     position: absolute;
-    width: 100%;;
+    width: 100%;
+    height: 100%;
+}
+#one{
+    opacity: 1;
+    height: 120%;
+    width: auto;
+    position: absolute;
+    top:-100px;
+    left:-300px;
+    border:0;
+    display: inline;
+}
+#two{
+    opacity: 0.8;
+    height: 80%;
+    width: auto;
+    position: absolute;
+    top:150px;
+    left:-300px;
 }
 #mask2{
     right: 0;
@@ -193,7 +212,11 @@ body{
     width: auto;
     margin: auto;
 } 
-
+.APC-IMG img{
+    height: 80%;
+    width: auto;
+    margin: auto;
+} 
 .APC-Power{
     height: 25%;
     width: 80%;
@@ -230,4 +253,45 @@ body{
     color: #8E8E93;
     font-size: 10px;
     font-family: SF-Pro-Text;
+}
+.loadding{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left:0;
+    background-color: black;
+    z-index:7;
+}
+
+.anim-load{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.anim-load video{
+    height: 34%;
+    width: auto;
+    margin: auto;
+    opacity: 1;
+    z-index: 10;
+}
+.load-start{
+    position: absolute;
+    top:75%;
+    left:50%;
+    transform: translate3d(-50%,-50%,0);
+    background: #000000;
+    border:solid 2px #1C77FF;
+    border-radius: 12px;
+    height:60px;
+    width: 160px;
+    color: #3885F7;
+    font-size: 35px;
+    font-family: "SF-Pro-Text";
+    cursor: pointer;
+    overflow: hidden;
+    transform-origin: center;
+    padding: 0;
 }
